@@ -18,13 +18,27 @@ const CenterModeSlider = () => {
         slidesToShow: 1,
         speed: 500,
         infinite: true,
-        dots: true,
+        dots: false,
         arrows: false, // Disable next/previous buttons
         responsive: [
             {
-                breakpoint: 1024, // For small screens
+                breakpoint: 1536, // For small screens
                 settings: {
-                    centerMode: false, // Disable center mode on small screens
+                    slidesToShow: 1, // Show only 1 slide
+                    centerPadding: "150px", // Remove padding
+                },
+            },
+            {
+                breakpoint: 1280, // For small screens
+                settings: {
+                    slidesToShow: 1, // Show only 1 slide
+                    centerPadding: "50px", // Remove padding
+                },
+            },
+            {
+                breakpoint: 768, // For small screens
+                settings: {
+                    centerMode: false,
                     slidesToShow: 1, // Show only 1 slide
                     centerPadding: "0px", // Remove padding
                 },
