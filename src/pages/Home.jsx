@@ -1,8 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import logoImage from '../assets/home/slide.png'
-import bgImage from '../assets/home/vector.png'
+import logoImage from '../assets/home/slide.png';
 
 const images = [
     logoImage,
@@ -20,6 +19,17 @@ const CenterModeSlider = () => {
         speed: 500,
         infinite: true,
         dots: true,
+        arrows: false, // Disable next/previous buttons
+        responsive: [
+            {
+                breakpoint: 1024, // For small screens
+                settings: {
+                    centerMode: false, // Disable center mode on small screens
+                    slidesToShow: 1, // Show only 1 slide
+                    centerPadding: "0px", // Remove padding
+                },
+            },
+        ],
     };
 
     return (
@@ -48,12 +58,10 @@ const CenterModeSlider = () => {
     );
 };
 
-
-
 export default function Home() {
     return (
         <div className="">
             <CenterModeSlider />
         </div>
-    )
+    );
 }

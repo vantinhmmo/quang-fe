@@ -20,12 +20,15 @@ button{
 img{
   max-width: 100%;
 }
+.slick-track {
+  display: flex !important;  /* Apply flex display to the track */
+  gap: 2.5rem;  /* Add gap between slides */
+}
+
 .slick-slide {
   opacity: 0.3;
 }
 
 .slick-center{
-  margin-right: 2.5rem;
-  margin-left: 2.5rem;
   opacity: 1;
 }
