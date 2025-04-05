@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  border: none;
+}
+
+img{
+  max-width: 100%;
+}
+.slick-slide {
+  opacity: 0.3;
+}
+
+.slick-center{
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  opacity: 1;
+}
